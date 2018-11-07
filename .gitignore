@@ -1,3 +1,9 @@
+##### Custom
+
+# eclipse-based files
+.classpath
+.project
+
 ##### Source: https://github.com/github/gitignore/blob/master/Java.gitignore
 
 # Compiled class file
