@@ -23,11 +23,19 @@ public class Controler
 	 * Here are some variable declarations.
 	 */
 	private int todo;
+	
+	/**
+	 * This is just an empty Constructor.
+	 */
+	private Controler ()
+	{
+		
+	}
+	
 	/**
 	 * This is the main method, that is only used to start the start method of the module.
 	 * @param args start parameters of the program
 	 */
-	
 	public static void main(String[] args) 
 	{
 		
@@ -41,7 +49,6 @@ public class Controler
 	/**
 	 * This is the start method that is starting the methods based on the todo flag.
 	 */
-	
 	private void start ()
 	{
 		

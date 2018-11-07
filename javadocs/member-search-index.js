@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"chiper.dbinterface","c":"Controler","l":"Controler()"},{"p":"chiper.dbinterface","c":"Controler","l":"main(String[])","url":"main-java.lang.String:A-"},{"p":"chiper.dbinterface","c":"Controler","l":"start()"},{"p":"chiper.dbinterface","c":"Controler","l":"todo"}]
+memberSearchIndex = [{"p":"chiper.dbinterface","c":"Controler","l":"Controler()"},{"p":"chiper.dbinterface","c":"Controler","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"chiper.dbinterface","c":"Controler","l":"start()"},{"p":"chiper.dbinterface","c":"Controler","l":"todo"}]
