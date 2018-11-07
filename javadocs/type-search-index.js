@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"chiper.dbinterface","l":"Controler"}]
