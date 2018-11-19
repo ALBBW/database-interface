@@ -12,10 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 The database interface needs Java (JDK 10.0.2 recommended) and YAJSQ (For running as Daemon).
 
-```
 <a href="https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk">Java JDK 10.0.2</a>
 <a href="http://yajsw.sourceforge.net/">YAJSW</a>
-```
 
 ### Installing (Windows 10)
 
