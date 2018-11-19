@@ -1,4 +1,4 @@
-.github/
-docs/
+.github/**
+docs/**
 .gitignore
-License.md
+LICENSE.MD
