@@ -2,20 +2,18 @@
  * filename: 			Controler.java
  * @author 				Joscha Alhelm
  * creation date: 		06.11.2018
- * alteration date:		07.11.2018
+ * alteration date:		19.11.2018
  */
 
 /**
  * Using the dbinterface package of the chiper program.
  */
-
 package chiper.dbinterface;
 
 /**
  * This is the Controler class, that is based on the MVC design pattern and controls the data flow between the
  connector interface and the database interface.
  */
-
 public class Controler 
 {
 	
