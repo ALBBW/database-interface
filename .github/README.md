@@ -1,8 +1,6 @@
-# database-interface
 <a href="https://codebeat.co/projects/github-com-albbw-database-interface-master"><img alt="codebeat badge" src="https://codebeat.co/badges/7149e145-0c9c-4c21-9e21-6db20f26c390" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="badge-align" href="https://www.codacy.com/app/ALBBW/database-interface?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ALBBW/database-interface&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/84606e5e098c47a9ac8161de5790d194"/></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
-This is the database interface, that talks only to the connector, that connects to the other modules.
 
-# Project Title
+# database-interface
 
 This is a database interface based on Java and run as Daemon with <a href="http://yajsw.sourceforge.net/">YAJSW</a>. It uses Telnet for receiving commands and after converting them in the proper format, they will be send to the database software.
 
