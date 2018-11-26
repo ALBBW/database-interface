@@ -54,7 +54,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Joscha Alhelm** - *Initial work* - [GamesGamble](https://github.com/GamesGamble)
+* **GamesGamble** - *Initial work* - (https://github.com/GamesGamble)
 
 See also the list of [contributors](https://github.com/ALBBW/database-interface/contributors) who participated in this project.
 

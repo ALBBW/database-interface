@@ -1,8 +1,8 @@
 /**
- * filename: 			Model_Output.java
- * @author 				Joscha Alhelm
+ * filename: 					Model_Output.java
+ * @author 						GamesGamble
  * creation date: 		12.11.2018
- * alteration date:		12.11.2018
+ * alteration date:		26.11.2018
  */
 
 /**
@@ -21,6 +21,6 @@ public interface Model_Output
 	 * This is the method that is sending sql commands to the database.
 	 * @param data in this variable are the sql commands.
 	 */	
-	public void setData (String data);
+	public void setData(String data);
 	
 }
