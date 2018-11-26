@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"chiper.dbinterface","l":"Controler"},{"p":"chiper.dbinterface","l":"Model_Input"},{"p":"chiper.dbinterface","l":"Model_Output"}]
+typeSearchIndex = [{"p":"chiper.dbinterface","l":"Model_Input"}]

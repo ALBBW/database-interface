@@ -20,7 +20,6 @@ public interface Model_Input
 	/**
 	 * This is the method that is receiving commands from program modules.
 	 * @return data in this variable are the commands.
-	 * @throws Exception 
 	 */	
 	public String getData();
 
