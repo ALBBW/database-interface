@@ -41,7 +41,7 @@ public class Controller
 			for(int i = 0; i > args.length; ++i)
 			{
 				// Checks if the program parameter contains the needed arguments.
-				switch(args [i])
+				in:switch(args [i])
 				{
 					case "-tcp": 
 						// Create new Model_Input Object
@@ -49,7 +49,7 @@ public class Controller
 						
 						// Set error1 to false when -tcp found in program arguments.
 						error1 = false; 
-						break;
+						break in;
 						
 					case "-mariadb":
 						// Create new Model_Ouput Object
@@ -57,7 +57,7 @@ public class Controller
 						
 						// Set error2 to false when -mariadb found in program arguments.
 						error2 = false;
-						break;
+						break in;
 				}
 				
 			}
@@ -93,6 +93,8 @@ public class Controller
 	{
 		
 		// Do something here...
+		model_input.getData();
+		model_output.setData("Test");
 		
 	}
 
