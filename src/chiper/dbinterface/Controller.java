@@ -30,10 +30,6 @@ public class Controller
 	public static void main(String[] args)  throws WrongParamsException
 	{
 		
-		// Declare variables.
-		boolean error1 = true;
-		boolean error2 = true;
-		
 		// Try code
 		try 
 		{
@@ -41,33 +37,40 @@ public class Controller
 			for(int i = 0; i > args.length; ++i)
 			{
 				// Checks if the program parameter contains the needed arguments.
-				in:switch(args [i])
+				if (args[i].contains("-tcp"))
 				{
-					case "-tcp": 
-						// Create new Model_Input Object
-		            	model_input = new Model_Input_TCP();
-						
-						// Set error1 to false when -tcp found in program arguments.
-						error1 = false; 
-						break in;
-						
-					case "-mariadb":
-						// Create new Model_Ouput Object
-	            		model_output = new Model_Output_MariaDB();
-						
-						// Set error2 to false when -mariadb found in program arguments.
-						error2 = false;
-						break in;
+					// Create new Model_Input Object
+        	model_input = new Model_Input_TCP();
+					
+				}
+				// If args -tcp not found
+				else if (i > args.length)
+				{
+					// throw Exception.
+					throw new WrongParamsException("You wanted to start the Program with wrong Parameters!");
+					
+				}
+			}
+			// Circling through the program arguments.
+			for(int i = 0; i > args.length; ++i)
+			{
+				// Checks if the program parameter contains the needed arguments.
+				if (args[i].contains("-mariadb"))
+				{
+					// Create new Model_Ouput Object
+      		model_output = new Model_Output_MariaDB();
+					
+				}
+				// If args -mariadb not found
+				else if (i > args.length)
+				{
+					// throw Exception.
+					throw new WrongParamsException("You wanted to start the Program with wrong Parameters!");
+					
 				}
 				
 			}
-			// When error1 or error 2 true.
-			if(error1 == true || error2 == true)
-			{
-				// throw Exception.
-				throw new WrongParamsException("You wanted to start the Program with wrong Parameters!");
-				
-			}
+			
 		}
 		// catch WrongParamsException Exception.
 		catch (WrongParamsException e)
