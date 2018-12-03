@@ -1,8 +1,8 @@
 /**
- * filename: 			Model_Input.java
- * @author 				Joscha Alhelm
+ * filename: 					Model_Input.java
+ * @author 						GamesGamble
  * creation date: 		19.11.2018
- * alteration date:		19.11.2018
+ * alteration date:		26.11.2018
  */
 
 /**
@@ -21,6 +21,6 @@ public interface Model_Input
 	 * This is the method that is receiving commands from program modules.
 	 * @return data in this variable are the commands.
 	 */	
-	public String getData ();
+	public String getData();
 
 }
