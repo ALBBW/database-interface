@@ -1,11 +1,5 @@
 ##### Custom
 
-# Libs Folder (License Problems)
-libs/
-
-# IntelliJ-based files
-.idea/
-
 # eclipse-based files
 .classpath
 .project
