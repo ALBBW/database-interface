@@ -1,5 +1,8 @@
 ##### Custom
 
+# IntelliJ-based files
+.idea/
+
 # eclipse-based files
 .classpath
 .project
