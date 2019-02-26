@@ -21,7 +21,9 @@ module de.albbw.chiper.dbinterface
 	requires transitive com.google.gson;
 	// This Module requires the Java SQL Module.
 	requires transitive java.sql;
-	// Makes the dbinterface Package (With no Submodules) public, so that the Listener can access the Constructor in
-	// the starter class.
+	/*
+	Makes the dbinterface Package (With no Submodules) public, so that the Listener can access the Constructor in
+	the starter class.
+	*/
 	exports de.albbw.chiper.dbinterface to de.albbw.chiper.dbinterface.listener;
 }

@@ -13,6 +13,9 @@ import de.albbw.chiper.dbinterface.constructor.Construct_JSON;
 import de.albbw.chiper.dbinterface.model.Model_Output_MariaDB;
 import de.albbw.chiper.dbinterface.parser.Parse;
 import de.albbw.chiper.dbinterface.parser.Parse_JSON;
+
+import java.util.concurrent.atomic.AtomicReference;
+
 /**
  * This Class starts is the Controller of the Library and is called by the Listener.
  */
@@ -36,17 +39,17 @@ public class starter
 		// Calls the setter of the parser method.
 		parse.setData(dataRaw);
 		// Gets the parsed Data from the parser.
-		JsonArray data = (JsonArray) parse.getData();
+		AtomicReference<JsonArray> data = new AtomicReference<>((JsonArray)parse.getData());
 		// Sets the parsed Data to the Model_Output Class.
 		model.setData(data);
 		// Gets the Response Data from the Model_Output Class.
-		data = (JsonArray) model.getData();
+		data.set((JsonArray)model.getData());
 		// Gets the IP-Address from the Model_Output Class.
 		String to = model.getTo();
 		// Sets the IP-Address of the Module and the Raw Response Data to the Constructor.
 		construct.setData(to, data);
 		// Gets the Finished Json Data from the Constructor.
-		data = (JsonArray) construct.getData();
+		data.set((JsonArray)construct.getData());
 		// This returns the Finished Json Data.
 		return data;
 	}

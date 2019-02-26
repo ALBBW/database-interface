@@ -12,6 +12,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -79,16 +81,16 @@ public class Model_Output_MariaDB implements Model_Output
 					one.set(i, resultSet.getArray(i).toString());
 					i++;
 				}
-				boolean sendNeeded = false;
+				AtomicBoolean sendNeeded = new AtomicBoolean(false);
 				if (data.contains("mode"))
 				{
 					JsonObject mode = (JsonObject) data.get(2);
 					JsonArray send = null; //TODO: needs rework!
-					sendNeeded = false; //TODO: needs rework!
+					sendNeeded.set(false); //TODO: needs rework!
 					
 				}
 				
-				if (sendNeeded)
+				if (sendNeeded.get())
 				{
 					
 					//JsonObject header = (JsonObject) data.get(0);
